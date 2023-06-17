@@ -1,0 +1,80 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+
+ <div>
+     <main>
+ {{#with web}}
+    <br>
+     <div> 
+      {{#each languages}} 
+      <P>{{name}}</P>
+      <p>{{version}}</p>
+      <p>{{description}}</p>
+      <h3>Elements</h3>
+      {{#each elements}}
+      <p>{{name}}</p>
+      <p>{{description}}</p>
+       <ul>{{#each   attributes}}
+         <li>{{name}} {{description}}</li>
+      {{/each}}
+      <p>{{name}}</p>
+      <p>{{description}}</p>
+      <ul>{{#each  attributes}}
+     <li>{{name}} {{description}}</li>
+     {{/each}}
+      {{/each}}
+      <br>
+      
+        <p>{{name}}</p>
+        <p>{{version}}</p>
+        <p>{{description}}</p>
+        <br>
+        {{#each properties}}
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+        <ul>
+          {{#each values}}
+          <li>{{value}} {{description}}</li>
+          {{/each}}
+        </ul>
+        <p>{{name}}</p>
+        <p>{{description}}</p>
+       <ul>
+       {{#each values}}
+       <li>{{value}} {{description}}</li>
+      {{/each}}
+       </ul>
+        {{/each}}
+      </div>
+      <br>
+      <div>
+     <p>{{name}}</p>
+     <p>{{version}}</p>
+     <p>{{desccription}}</p>
+     <br>
+     <ul>
+      {{#each functions}}
+      <li>{{name}} {{description}} 
+        <ul>{{#each parameters}}
+          <li>{{name}} {{type}} {{desccription}}</li>
+          {{/each}}
+
+        </ul>
+      </li>
+      {{/each}}
+
+     </ul>
+      </div>
+      {{/each}}   
+  
+   {{/with}}
+   <br>
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
