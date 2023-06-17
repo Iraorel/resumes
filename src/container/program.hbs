@@ -1,0 +1,92 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+
+<div>
+<main>
+  <br>
+  <hr>
+    {{#with program}}
+    {{#with excursion}}
+       {{name}}
+       {{#with location}}
+        <p>{{city}} </p>
+        <p>{{country}}</p>
+        {{/with}}
+        <p>{{date}}</p>
+        <h2>Program</h2>
+        {{#each program}}
+        {{name}} {{type}} {{duration}} 
+          {{#with details}}
+            {{#with museum}}
+           <p> {{name}}</p> 
+           
+            {{#with location}}
+              <p>{{address}}</p> 
+              <p>{{city}}</p> 
+              <p>{{country}}</p>
+            {{/with}}
+            <br>
+            <ul>
+             
+            {{#each exhibits}}
+            <li>
+              <p>{{name}}</p>
+              <p>{{artist}}</p>
+              <p>{{description}}</p>
+              <p>{{audio_guide}}</p>
+            </li>
+            {{/each}}
+            </ul>
+            {{/with}}
+                {{/with}}
+            <br>
+         
+            {{#with guide}}
+            <p>{{name}}</p>
+            <p>{{language}}</p>
+            <p>{{rating}}</p>
+          
+              {{/with}}
+            <br>
+           <h2>Det</h2>
+            {{#with details}}
+            {{#with venue}}
+            {{name}}
+            {{#with location}}
+            <p>{{address}}</p>
+            <p>{{city}}</p>
+            <p>{{country}}</p>
+            {{/with}}
+            {{/with}}
+          
+            {{#each performers}}
+            <p>{{name}}</p>
+            <p>{{type}}</p>
+            {{/each}}
+            
+             {{#with guide}}
+            <p>{{name}}</p>
+            <p>{{language}}</p>
+            <p>{{rating}}</p>
+             {{/with}}
+            {{/with}}
+            
+           
+     {{/each}}
+        
+                <br>
+
+    {{/with}}
+    {{/with}}
+    <hr>
+
+</main>
+</div>
+
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
