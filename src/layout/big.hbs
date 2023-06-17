@@ -1,0 +1,59 @@
+{{!-- 
+  Це леяут по замовчюванню, котрий вже містить базову структуру HTML документа
+  І котрий обгортає код container файлів для будь-яких ендпоїнтів--}}
+
+  <!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+    {{page.title}}
+    </title>
+    <meta charset='utf-8' />
+    <link href='css/index.css' rel='stylesheet' />
+  </head>
+
+  <body>
+ 
+    <nav>
+       {{>link  href="/summary" text="Summary" line=true }}
+       {{>link  href="/skills" text="Skills" line=true }}
+       {{>link  href="/education" text="Education" line=true }}
+       {{>link  href="/work" text="Work" line=true line=true }}
+      {{>link  href="/person" text="Person" line=true line=true }}
+      {{>link  href="/bio" text="Bio" line=true noLine=true }}
+    </nav>
+     <br>
+    <hr>
+
+    
+    {{!  ↓  ця кострукція показує куди шаблонізатору треба вставляти код з container файлу   --}}
+    {{{body}}}
+   
+  </body>
+  <br>
+  <hr>
+  {{#with footer}}
+<footer>
+        <div>
+        {{#with social}}
+           
+               {{>link  href=email.href text=email.text blank=true line=true}}
+               {{> link href=phone.href  text=phone.text  blank=true line=true }}
+               {{> link blank=true href=linkedin.href text=linkedin.text   blank=true  noLine=true}}
+
+        {{/with}}
+      </div>
+      <br>
+      <div>
+        <em>Copyright by {{../header/name/firstname}} {{../header/name/lastname}}</em>
+      </div>
+      <br>
+       <div>
+          <address>{{../header/address}}</address>
+      </div>
+       
+    </footer>
+
+    {{/with}}
+</html>
