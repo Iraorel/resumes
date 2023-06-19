@@ -1,0 +1,88 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+<div>
+     <main>
+{{#with js}}
+<br>
+<div>
+  <p>{{name}}</p>
+  <p>{{description}}</p>
+</div>
+ {{#with history}} 
+ <p>{{year}}</p>
+ <p>{{founder}}</p>
+ {{/with}}
+ <br>
+ 
+   {{#with types }} 
+   <button type="button" class="btn btn-primary">Number</button>
+   <button type="button" class="btn btn-primary">String</button>
+   <button type="button" class="btn btn-primary">Boolean</button>
+   <button type="button" class="btn btn-primary">Null</button>
+    <button type="button" class="btn btn-primary">Undefined</button>
+   <button type="button" class="btn btn-primary">Symbol</button>
+   <button type="button" class="btn btn-primary">Object</button>
+ 
+   {{/with }}
+
+   <br>
+   {{#with syntax}}
+ <p> {{variables}}</p>
+ <p>{{functions}}</p>
+ <p>{{conditionals}}</p>
+ <p>{{loops}}</p>
+ <p>{{classes}}</p>
+   {{/with}}
+<ul>
+   {{#with features}}
+   <p> 'First-class functions',
+ 'Closures',
+ 'Dynamic typing',
+ 'Prototype-based inheritance',
+ 'Asynchronous programming with Promises and async/await',
+ 'Modules with import/export statements'</p>
+   {{/with}}
+</ul>
+<br>
+ {{#with libraries}}
+ <div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">libraries</li>
+    <li class="list-group-item">jQuery</li>
+    <li class="list-group-item">React</li>
+    <li class="list-group-item">Angular</li>
+    <li class="list-group-item">Vue</li>
+    <li class="list-group-item">Node.js</li>
+    <li class="list-group-item">Express.js</li>
+    <li class="list-group-item">Moment.js</li>
+  </ul>
+</div>  
+
+ {{/with}}
+<br>
+ {{#with tools}}
+ <p>'Babel',
+'Webpack',
+'ESLint',
+'Jest',
+'Mocha',
+'Chai',
+'Selenium',
+'Cypress'</p>
+ {{/with}}
+<br>
+{{#each community}}
+<p>{{name}}
+{{type}}</p>
+{{/each}}
+  {{/with}}
+
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
