@@ -1,0 +1,106 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+<div>
+     <main>
+{{#with mac}}
+<hr>
+<br>
+<div>
+  <h2>{{name}}</h2>
+  <p>{{description}}</p>
+  <p>{{price}}</p>
+  <p>{{category}}</p>
+</div>
+<br>
+{{#with features}} 
+{{#with processor}} 
+<h3>processor</h3>
+<p>brand:  {{brand}}</p> 
+<p>model:  {{model}}</p>
+<p>speed:   {{speed}} </p>
+<p>cores:   {{cores}} </p>
+<p>cache:   {{cache}} </p>
+{{/with}}
+{{#with memory}}
+<h3>memory</h3>
+<p>type:  {{type}}</p> 
+<p>size:  {{size}}</p>
+<p>speed:  {{speed}}</p>
+{{/with}}
+{{#with storage}}
+<h3>storage</h3>
+<p>type:  {{type}}</p> 
+<p>size:  {{size}}</p>
+{{/with}}
+{{#with display}} 
+<h3>display</h3>
+<p>size:  {{size}}</p> 
+<p>resolution:  {{resolution}}</p>
+<p>technology:   {{technology}} </p>
+<p>color space:   {{color_space}} </p>
+<p> brightness:   {{ brightness}} </p>
+<p> refresh rate:   {{ refresh_rate}} </p>
+{{/with}}
+{{#with graphics}} 
+<h3>graphics</h3>
+<p>brand:  {{brand}}</p> 
+<p>model:  {{model}}</p>
+<p>memory:   {{memory}} </p>
+{{/with}}
+
+<br>
+<ul>
+  <h3>ports</h3>
+{{#each ports }}
+
+<li>
+  <p> Type :  {{type}}</p> 
+  <p>Count :{{count}}</p> 
+  <p> {{features}}</p></li>
+{{#each features}}
+{{features}}
+{{/each}}
+{{/each}}
+</ul>
+
+<br>
+{{#with battery}} 
+<h3>battery</h3>
+<p>type:  {{type}}</p> 
+<p>capacity:  {{capacity}}</p>
+<p>life:   {{life}} </p>
+{{/with}}
+<br>
+<p>Weight {{weight}}</p>
+<br>
+{{#with  dimensions}} 
+<h3> dimensions</h3>
+<p> height:  {{ height}}</p> 
+<p>width:  {{width}}</p>
+<p>depth:  {{depth}}</p>
+{{/with}}
+<br>
+<p>operating_system: {{operating_system}}</p>
+
+<br>
+<ul>
+  <h3>Accessories</h3>
+{{#each accessories }}
+<li>
+  <p>Name: {{name}}</p>
+  <p>price:  {{price}}</p>
+</li>
+{{/each}} 
+</ul>
+{{/with}}
+  {{/with}}
+<hr>
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
