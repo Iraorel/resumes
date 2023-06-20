@@ -1,0 +1,140 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+<div>
+     <main>
+{{#with car}}
+
+<br>
+<div>
+  <h2>{{make}}</h2>
+  <p>{{model}}</p>
+  <p>{{year}}</p>
+  <p>{{color}}</p>
+</div>
+<br>
+{{#with features}} 
+{{#with interior}} 
+{{#with seats}} 
+<ul class="list-group list-group-horizontal-sm">
+  <li class="list-group-item">Material</li>
+  <li class="list-group-item">{{material}}</li>
+</ul>
+<ul class="list-group list-group-horizontal-md">
+  <li class="list-group-item">Color</li>
+  <li class="list-group-item">{{color}}</li>
+</ul>
+<ul class="list-group list-group-horizontal-lg">
+  <li class="list-group-item">Heated</li>
+  <li class="list-group-item">{{heated}}</li>
+</ul>
+<ul class="list-group list-group-horizontal-xl">
+  <li class="list-group-item">Ventilated</li>
+  <li class="list-group-item">{{ventilated}}</li>
+</ul>
+{{/with}}
+{{#with dashboard}}
+<p>{{material}}</p> 
+<p>{{color}}</p>
+{{#with display}} 
+<p>Type  {{type}}</p>
+<p>Size  {{size}}</p> 
+<p>Resolution  {{resolution}}</p>
+<p>Touchscreen  {{touchscreen}}</p>
+{{/with}}
+{{/with}}
+
+<br>
+{{#with audio}}
+<h3>Audio</h3>
+<p>System {{system}}</p>
+<p>Speakers {{speakers}} </p> 
+<p>Subwoofer  {{subwoofer}}</p>
+<p>Bluetooth  {{bluetooth}}</p>
+<p>USB  {{USB}}</p>
+{{/with}}
+{{/with}}
+<br>
+{{#with exterior}}
+{{#with wheels}}
+<h3>Wheels</h3>
+<p>size:  {{size}}</p> 
+<p>type: {{type}}</p>
+<p>color:  {{color}} </p>
+{{/with}}
+{{#with headlights}} 
+<h3>Headlights</h3>
+<p>type:  {{type}}</p> 
+<p>brightness: {{brightness}}</p>
+<p>automatic:  {{automatic}} </p>
+{{/with}}
+{{#with  sunroof}}
+<h3>sunroof</h3>
+<p>type:  {{type}}</p> 
+<p>size: {{size}}</p>
+<p>automatic:  {{automatic}} </p>
+{{/with}}
+{{/with}}
+<br>
+{{#with safety}}
+{{#with airbags}}
+<h3>airbag</h3>
+<p>front   {{front}}</p> 
+<p>side  {{side}}</p>
+<p>knee   {{knee}} </p>
+<p>rear   {{rear}} </p>
+{{/with}}
+<br>
+{{#with assistance}}
+<h3>assistance</h3>
+<p>blind spot monitoring :   {{blind_spot_monitoring}}</p>
+<p>rear cross traffic alert:  {{rear_cross_traffic_alert}}</p>
+<p>lane departure warning::   {{lane_departure_warning}} </p>
+<p>adaptive cruise control:   {{adaptive_cruise_control}} </p>
+<p>collision warning:   {{collision_warning}}</p>
+{{/with}}
+
+{{/with}}
+{{/with}}
+<br>
+{{#with engine}}
+<h3> Engine</h3>
+<p>type:   {{type}}</p>
+<p>displacement:  {{displacement}}</p>
+<p>horsepower:   {{horsepower}} </p>
+<p>torque:   {{torque}} </p>
+{{#with transmission}}
+<h3>transmission</h3>
+<p>type   {{type}}</p> 
+<p>gears  {{gears}}</p>
+{{/with}}
+{{/with}}
+
+<br>
+{{#with fuel_economy}}
+<h3>Fuel economy</h3>
+<p>city   {{city}}</p> 
+<p>highway  {{highway}}</p>
+<p>combined   {{combined}} </p>
+{{/with}}
+{{#with price}}
+<h3>Price</h3>
+<p>base:   {{base}}</p> 
+<p>destination:  {{destination}}</p>
+{{#with options}}
+<p>navigation:   {{navigation}} </p>
+<p> moonroof:   {{ moonroof}} </p>
+<p>premium paint:   {{premium_paint}} </p>
+{{/with}}
+<h3>Total  {{total}}</h3>
+{{/with}}
+  {{/with}}
+
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
