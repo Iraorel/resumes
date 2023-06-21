@@ -1,0 +1,119 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+<div>
+     <main>
+{{#with task21}}
+<hr>
+<br>
+
+{{#with heading}}
+<br>
+
+{{#with main}}
+<div class="card card-body">
+<h1>{{title}}</h1>
+<p >{{text}}</p>
+<div>
+{{#with button_text}} 
+<p> <button type="button" class=" btn btn-primary">{{solid}}</button></p>
+ <button type="button" class=" btn btn-light text-primary">{{outline}}</button>
+{{/with}}
+</div>
+{{/with}}
+</div>
+<br>
+<div class="card card-body">
+{{#with second}}
+<h2>{{title}}</h2>
+<p >{{text}}</p>
+<div>
+{{#with button_text}} 
+<p> <button type="button" class=" btn btn-secondary text-muted">{{solid}}</button></p>
+ <p><button type="button" class=" btn btn-ligth text-muted">{{outline}}</button></p>
+{{/with}}
+</div>
+{{/with}}
+
+</div>
+<br>
+<div class="card card-body">
+{{#with subblock}}
+<h3>{{title}}</h3>
+<p >{{text}}</p>
+<div>
+{{#with button_text}} 
+ <p><button type="button" class=" btn btn-dark">{{solid}}</button></p>
+ <p><button type="button" class=" btn btn-ligth text-dark">{{outline}}</button></p>
+{{/with}}
+</div>
+{{/with}}
+
+{{/with}}
+</div>
+<br>
+<br>
+<br>
+<div class="card card-body">
+{{#with nested_display}}
+<div>
+<p class="display-4">{{title}}</p>
+</div>
+<div>
+{{#with  children_display}}
+<p >{{title}}</p>
+<p >{{text}}</p>
+</div>
+<div>
+{{#with button}} 
+ <p><button type="button" class=" btn btn-ligth text-warning">{{text}}</button>
+{{/with}}
+</div>
+{{/with}}
+</div>
+{{/with}}
+<br>
+<br>
+<br>
+
+<div class="card card-body">
+{{#with paragraph}} 
+<div>
+<p class="text-uppercase">{{title}}</p>
+<p>{{text}}</p>
+</div>
+
+<div>
+{{#with button}} 
+<p><a href="#" class=" btn btn-link ">{{text}} </p>
+{{URL}}
+{{/with}}
+</div>
+<div class="card card-body">
+<ul>
+{{#each list_name}}
+
+<li>
+<a href="#" class=" btn btn-link ">{{text}} {{url}}</li>
+
+
+{{/each}} 
+</ul>
+</div>
+
+
+{{/with}}
+</div>
+
+
+
+{{/with}}
+
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
