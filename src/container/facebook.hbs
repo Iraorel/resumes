@@ -1,0 +1,97 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+<div>
+     <main>
+{{#with facebook}}
+<hr>
+<br>
+<h2>{{name}}</h2>
+<br>
+<ul>
+{{#each users}}
+<li>
+  <h3>Users</h3>
+  <p>Id: {{id}}</p>
+  <p>Name: {{name}}</p>
+  <p>Gender: {{gender}}</p>
+  <p>Age: {{age}}</p>
+ {{#each friends}}
+ <li>
+  <h3>Friends</h3>
+<p>Id: {{id}}</p>
+<p>Name: {{name}}</p>
+<p>Gender: {{gender}}</p>
+<p>Age: {{age}}</p></li>
+<br>
+ {{#each mutual_friends}}
+ <li>
+  <h3>Mutual friends</h3>
+ <p>Id: {{id}}</p>
+ <p>Name: {{name}}</p>
+ <p>Gender: {{gender}}</p>
+ <p>Age: {{age}}</p>
+  </li>
+<br>
+{{/each}} 
+{{/each}}
+{{#each groups}}
+<li>
+  <h4>Groups</h4>
+<p>Id: {{id}}</p>
+<p>Name: {{name}}</p>
+<p>description: {{description}}
+</li>
+
+{{#each members}}
+<li>
+  <h4>Members</h4>
+ <p>Id: {{id}}</p>
+ <p>Name: {{name}}</p>
+ <p>Gender: {{gender}}</p>
+ <p>Age: {{age}}</p>
+ </li>
+{{/each}}
+{{/each}}
+<br>
+  
+
+
+<br>
+<br>
+{{#each friends}}
+{{#each groups}}
+<li>
+  <h4>Groups</h4>
+<p>Id: {{id}}</p>
+<p>Name: {{name}}</p>
+<p>description: {{description}}</p>
+</li>
+
+{{#each members}}
+<li>
+  <h4>Members</h4>
+ <p>Id: {{id}}</p>
+ <p>Name: {{name}}</p>
+ <p>Gender: {{gender}}</p>
+ <p>Age: {{age}}</p>
+ </li>
+
+{{/each}}
+{{/each}}
+{{/each}}
+ 
+{{/each}}
+</li>
+</ul>
+<hr>
+  {{/with}}
+
+ </main>   
+</div>
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
