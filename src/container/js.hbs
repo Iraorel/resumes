@@ -16,20 +16,16 @@
  {{/with}}
  <br>
  
-   {{#with types }} 
-   <button type="button" class=" btn btn-primary">Number</button>
-   <button type="button" class="btn btn-secondary">String</button>
-   <button type="button" class="btn btn-success">Boolean</button>
-   <button type="button" class="btn  btn-danger">Null</button>
-    <button type="button" class="btn btn-warning">Undefined</button>
-   <button type="button" class="btn btn-info">Symbol</button>
-   <button type="button" class="btn btn-light">Object</button>
- 
-   {{/with }}
+    {{#each types}}
+        <ul>
+            <li>{{this}}</li>
+        </ul>
+     {{/each}}
+
 
    <br>
    {{#with syntax}}
- <p> {{variables}}</p>
+  <p> {{variables}}</p>    
  <p>{{functions}}</p>
  <p>{{conditionals}}</p>
  <p>{{loops}}</p>
