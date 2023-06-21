@@ -17,13 +17,13 @@
  <br>
  
    {{#with types }} 
-   <button type="button" class="btn btn-primary">Number</button>
-   <button type="button" class="btn btn-primary">String</button>
-   <button type="button" class="btn btn-primary">Boolean</button>
-   <button type="button" class="btn btn-primary">Null</button>
-    <button type="button" class="btn btn-primary">Undefined</button>
-   <button type="button" class="btn btn-primary">Symbol</button>
-   <button type="button" class="btn btn-primary">Object</button>
+   <button type="button" class=" btn btn-primary">Number</button>
+   <button type="button" class="btn btn-secondary">String</button>
+   <button type="button" class="btn btn-success">Boolean</button>
+   <button type="button" class="btn  btn-danger">Null</button>
+    <button type="button" class="btn btn-warning">Undefined</button>
+   <button type="button" class="btn btn-info">Symbol</button>
+   <button type="button" class="btn btn-light">Object</button>
  
    {{/with }}
 
@@ -74,8 +74,12 @@
  {{/with}}
 <br>
 {{#each community}}
-<p>{{name}}
+<div class="alert alert-primary" role="alert">
+ <p>{{name}}
 {{type}}</p>
+</div>
+
+
 {{/each}}
   {{/with}}
 
