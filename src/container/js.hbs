@@ -24,57 +24,37 @@
 
 
    <br>
-   {{#with syntax}}
-  <p> {{variables}}</p>    
- <p>{{functions}}</p>
- <p>{{conditionals}}</p>
- <p>{{loops}}</p>
- <p>{{classes}}</p>
-   {{/with}}
+   {{#each syntax}}
+   <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{this}}</li>
+   </ul>
+
+   {{/each}}
+   <br>
+
 <ul>
-   {{#with features}}
-   <p> 'First-class functions',
- 'Closures',
- 'Dynamic typing',
- 'Prototype-based inheritance',
- 'Asynchronous programming with Promises and async/await',
- 'Modules with import/export statements'</p>
-   {{/with}}
+   {{#each features}}
+   <p>{{this}}</p>
+      {{/each}}
 </ul>
 <br>
- {{#with libraries}}
+ {{#each libraries}}
  <div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">libraries</li>
-    <li class="list-group-item">jQuery</li>
-    <li class="list-group-item">React</li>
-    <li class="list-group-item">Angular</li>
-    <li class="list-group-item">Vue</li>
-    <li class="list-group-item">Node.js</li>
-    <li class="list-group-item">Express.js</li>
-    <li class="list-group-item">Moment.js</li>
+    <li class="list-group-item">{{this}}</li> 
   </ul>
 </div>  
-
- {{/with}}
+ {{/each}}
 <br>
- {{#with tools}}
- <p>'Babel',
-'Webpack',
-'ESLint',
-'Jest',
-'Mocha',
-'Chai',
-'Selenium',
-'Cypress'</p>
- {{/with}}
+ {{#each tools}}
+ <p>{{this}}</p>
+ {{/each}}
 <br>
 {{#each community}}
 <div class="alert alert-primary" role="alert">
  <p>{{name}}
 {{type}}</p>
 </div>
-
 
 {{/each}}
   {{/with}}
