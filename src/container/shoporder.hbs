@@ -1,0 +1,477 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+
+<div>
+    <main>
+   <div class="nav">
+       <ul class="nav">
+              <li><a href="https://githu" class="nav-link">Home </a></li>
+             
+              <li><a href="https://www.google.com/" class="nav-link">Contacts </a></li>
+          
+             
+              <li><a href="https://www.youtube.com/"  class="nav-link">Help </a></li>
+           
+               <li><a href="#" class=" nav-link disabled">Exit</a></li>
+         
+       </ul> 
+   </div>
+   <hr>
+   <br>
+   <section>
+     
+    <div>
+        <h1>Оформлення замовлення</h1>
+    </div>
+      <div class="row g-2">
+        <div class="col-8">
+    <div>
+        <h2>Контактні дані</h2>
+    
+    <div>
+        <button type="button"  class="btn btn-warning ">Я новий покупець</button>
+        <button type="button" class="btn btn-outline-warning">Я постійний покупець</button>
+
+    </div>
+        </div>
+   <br>
+   <div class="row ">
+    <div class=" col-md-6">
+      
+     <label for="formGroupExampleInput" class="form-label">Прізвище</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Іванов">
+       <div class="form-text" id="basic-addon4">Введіть прізвище.</div>
+  </div>
+  <div class=" col-md-6">
+       
+       <label for="formGroupExampleInput" class="form-label">Ім’я</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Іван">
+         <div class="form-text" id="basic-addon4">Введіть Ім’я.</div>
+  </div>
+   <div class=" col-md-6">
+      <label for="formGroupExampleInput" class="form-label">Мобільний телефон</label>
+       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+38 (XXX) XXX XX XX">
+        <div class="form-text" id="basic-addon4">Введіть телефон.</div>
+     
+</div>
+      <div class=" col-md-6">
+       <label for="formGroupExampleInput" class="form-label">Пошта</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ivanivanov@ukr.net">
+         <div class="form-text" id="basic-addon4">Введіть Пошту.</div>
+ </div>
+ 
+
+          <hr>
+  <div class="mt-2 mb-2">
+   <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+   <label class="form-check-label" for="flexSwitchCheckDefault">Отримувати інформацію про новинки</label>
+  </div>
+  </div>
+  <div class="mt-2 mb-2">
+  <div class="form-check form-switch">
+   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Отримувати інформацію про знижки</label>   
+      </div>
+  </div>
+  <hr>
+    </div>
+    </div>
+        <div class="col-4">
+      <div class="card px-2 py-2 mb-2">
+            <div class="m-1">
+           <a href="#" class="btn btn-success btn-sm"  role="button">Швидке замовлення</a>
+            </div>
+           <div class="m-1">
+            <a href="#" class="btn btn-danger btn-sm"  role="button">Видалити</a>
+            </div>
+            <div class="m-1"> 
+            <a href="#" class="btn btn-info btn-sm"  role="button">Детальніше</a>
+           </div>
+       </div>
+    
+<div class="card">
+  <h3>Всього</h3>
+    <div>Ноут:   25 000 ₴</div>
+    <div>Мишка:  25 000 ₴</div>
+    <div>Клава:  25 000 ₴</div>
+  <hr>
+     <div>Всього товарів:   75 000 ₴</div>
+      <div>Купони:  Немає</div>
+      <div>Доставка: Безкоштовно</div>
+  <hr>
+  <div>
+      Всього товарів:   75 000 ₴
+  </div>
+
+  <hr>
+  <div>
+    <div class="m-1">
+      <a href="#" class="btn btn-primary btn-sm"  role="button">Підтвердити замовлення</a>
+      </div>
+      <div class="m-1">
+      <a href="#" class="btn btn-outline-info btn-sm"  role="button">Відмінити купони</a>
+      </div>
+   </div>
+ </div>
+  </div>
+</div>
+
+</div>
+   </section>
+  
+
+<section >
+    
+    <div>
+        <h2>Доставка</h2>
+    </div>
+    <div class="card col-8">
+ <div class="row g-3 ">
+
+    <div  class="col-6">
+      <p>Місто доставки</p>
+    <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+  <option selected>Оберіть місто доставки</option>
+  <option value="1">Київ</option>
+  <option value="2">Харків</option>
+  <option value="3">Одеса</option>
+  <option value="4">Львів</option>
+   <option value="5">Дніпро</option>
+    <option value="6">Донецьк</option>
+  </select>
+   </div>
+  
+   <br>
+   <div class="col-6">
+   <div > 
+    <p>Район доставки</p>
+   </div>
+   <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+ <option selected>Оберіть район доставки</option>
+ <option value="1">Голосіївський</option>
+ <option value="2">Оболонський</option>
+ <option value="3">Печерський</option>
+ <option value="4">Дарницький</option>
+  <option value="5">Деснянський</option>
+   <option value="6">Подільський</option>
+ </select>
+  </div>
+  </div>
+
+</div>
+</section>
+
+
+<section class="col-8">
+  <hr>
+  <div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   Самовивіз з відділення Нової пошти
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+  Кур’єром Нової пошти
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+   Самовивіз з магазину
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+   Доставка закордон
+  </label>
+</div>
+  </div>
+  <hr>
+</section>
+
+
+<section>
+  
+<div class="col-8">
+  <h2>Оплата</h2>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+ Оплата при отриманні
+  <div class="form-text" id="basic-addon4">За тарифами перевізника.</div>
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+  Оплатити зараз
+  </label>
+
+</div>
+<hr>
+</div>
+
+</section>
+
+<section >
+  
+  <div class="col-8">
+      <h2>Контактні дані отримувача</h2>
+  </div>
+ <div class="row">
+  <div class=" col-md-4">
+      
+     <label for="formGroupExampleInput" class="form-label">Прізвище</label>
+      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Іванов">
+       <div class="form-text" id="basic-addon4">Введіть прізвище.</div>
+  </div>
+  <div class="col-md-4">
+       
+       <label for="formGroupExampleInput" class="form-label">Ім’я</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Іван">
+         <div class="form-text" id="basic-addon4">Введіть Ім’я.</div>
+  </div>
+  </div>
+   <div class="row">
+   <div class=" col-md-4">
+      <label for="formGroupExampleInput" class="form-label">Мобільний телефон</label>
+       <input type="text" class="form-control" id="formGroupExampleInput" placeholder="+38 (XXX) XXX XX XX">
+        <div class="form-text" id="basic-addon4">Введіть телефон.</div>
+     
+</div>
+      <div class="col-md-4">
+       <label for="formGroupExampleInput" class="form-label">Пошта</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ivanivanov@ukr.net">
+         <div class="form-text" id="basic-addon4">Введіть Пошту.</div>
+ </div>
+ </div>
+
+</section>
+
+<section>
+<div class="col-8">
+  <hr>
+<label for="exampleDataList" class="form-label">Коментар</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Я хочу, щоб...">
+<hr>
+</div>
+
+</section>
+
+<section>
+  <div>
+
+    <div>
+      <h2>Купони</h2>
+    </div>
+    <div > 
+ <p>Наявні купони</p>
+</div>
+    <div class="col-8">
+         <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+ <option selected>Виберіть купони</option>
+ <option value="1">SEEYALATER</option>
+<option value="2">HOTEL10</option>
+<option value="3">DOWNLOAD25</option>
+ </select>
+    </div>
+    <div > 
+ <p>Купони за запрошених друзів</p>
+ </div>
+    <div class=" col-8">
+      <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+ <option selected>Виберіть купон</option>
+ <option value="1">RAVEL5</option>
+ <option value="2">5VACA</option> 
+ <option value="3">150VACA</option>
+ </select>
+    </div>
+    <div>
+      <div class="col-8">
+
+   <label for="exampleDataList" class="form-label">Запросіть друзів та отримайте ще купонів</label>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Введіть контактні дані друзів через ;">
+   <label class="form-check-label" for="flexSwitchCheckDefault">Напишіть електронні адреси/телефон друзів через “;”</label>
+  </div>
+        
+        <div class="col-8">
+   <label for="exampleDataList" class="form-label">Запросити колег</label>
+    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Введіть контактні дані друзів через ;">
+   <label class="form-check-label" for="flexSwitchCheckDefault">Напишіть електронні адреси/телефон друзів через “;”</label>
+ 
+    <hr> </div>
+
+</section>
+    </div>
+   
+  </div>
+</section>
+
+<section>
+  <div class="col-8">
+    <div>
+      <h2>Домоможи краще нам тебе зрозуміти</h2>
+    </div>
+    <div>
+      <div><h4>Який тип обладнання ви зацікавлені в придбанні?</h4></div>
+        <div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+  Смартфони
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+  Ноутбуки
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option3">
+  <label class="form-check-label" for="exampleRadios2">
+   Планшети
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option4">
+  <label class="form-check-label" for="exampleRadios2">
+   ПК
+    </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option5">
+  <label class="form-check-label" for="exampleRadios2">
+   Телевізори
+    </div>
+  </div>
+  <div>
+<label for="exampleDataList" class="form-label">Який у Вас досвід користування ПК</label>
+<input class="form-control" list="datalistOptions" id="exampleDataList" >
+</div>
+    <div > 
+ <p>Як часто ви купуєте обладнання?</p>
+ </div>
+    <div>
+      <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+ <option selected>Оберіть варіант</option>
+ <option value="1">Раз в тиждень</option>
+ <option value="2">Раз в рікісяць</option> 
+ <option value="3">Раз в рік</option>
+ </select>
+   </div>
+   <div>
+    <div>
+      <p>Які з наведених нижче факторів є для вас важливими при купівлі обладнання?</p>
+    </div>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Ціна
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+  Репутація бренду
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Якість
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Особливості
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Гарантія
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Доступність
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Обслуговування клієнтів
+  </label>
+</div>
+   </div>
+</section>
+<hr>
+<section>
+  <section class="row">
+   
+   <div class="col-2" >
+  <div class="list-group">
+  <a href="https://www.youtube.com/" class="btn btn-link">Home</a>
+  <a href="https://www.youtube.com/feed/subscriptions.com/feed/trending" class="btn btn-link">Trending</a>
+  <a href="https://www.youtube.com/feed/subscriptions" class="btn btn-link">Subscriptions</a>
+  <a href="https://www.youtube.com/feed/library" class="btn btn-link disabled">Library</a>
+  </div>
+  </div>
+
+  <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/feed/history" class="btn btn-link">History</a>
+ <a href="https://www.youtube.com/feed/my_videos" class="btn btn-link">Your Videos</a>
+ <a href="https://www.youtube.com/live" class="btn btn-link">Live</a>
+ <a href="https://www.youtube.com/accoun" class="btn btn-link disabled">Settings</a>
+ </div>
+ </div>
+
+  <div class="col-2" >
+<div class="list-group">
+<a href="https://www.youtube.com/playlist?list=WL" class="btn btn-link">Watch Later</a>
+<a href="https://www.youtube.com/playlist?list=LL" class="btn btn-link">Liked Videos</a>
+<a href="https://www.youtube.com/music" class="btn btn-link">Music</a>
+<a href="https://www.youtube.com/gaming" class="btn btn-link disabled">Gaming</a>
+</div>
+</div>
+
+  <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/channel/UCo_q6aOlvPH7M-j_XGWVgXg" class="btn btn-link">Sports</a>
+ <a href="https://www.youtube.com/news" class="btn btn-link">News</a>
+ <a href="https://www.youtube.com/channel/UC1x8rV_f-2yPpzlN0JWZXIQ" class="btn btn-link">LFashion & Beauty</a>
+ <a href="https://www.youtube.com/learning" class="btn btn-link disabled">Learning</a>
+ </div>
+ </div>
+
+   <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/feed/history/report_history" class="btn btn-link">Report History</a>
+ <a href="hhttps://support.google.com/youtube/?hl=en" class="btn btn-link">Help</a>
+ <a href="hhttps://support.google.com/youtube/answer/4347644?hl=en" class="btn btn-link">Send Feedback</a>
+ <a href="hhttps://www.youtube.com/about" class="btn btn-link disabled">About</a>
+ </div>
+ </div>
+
+</section>
+
+</section>
+    </main>
+
+</div>
+
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
