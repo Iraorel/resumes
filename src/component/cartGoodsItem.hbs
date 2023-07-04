@@ -1,0 +1,30 @@
+
+{{#with goodsBlock}}
+ <div  class="card  mb-2 p-2">
+   <div class="row">
+ <div   class="col-2">
+{{image}}
+ <div class="col-4">
+<h6>{{name}}</h6>
+<p>{{description}}</p>
+</div>
+ <diV class="col-2 pt-6">
+{{#with price}}
+<p>{{title}}</p>
+<p>{{value}}</p>
+{{/with}}
+</diV>
+<diV  class="col-2 ">
+<p>{{amount}}</p></diV>
+<div class="col-2  mt-3">
+{{#each buttons}}
+<div class="mb-2" > {{text}} </div>
+{{/each}}
+</div>
+</div>
+   </div>
+   </div>
+
+{{/with}}
+
+
