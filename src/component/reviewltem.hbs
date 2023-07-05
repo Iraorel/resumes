@@ -1,0 +1,61 @@
+
+{{#with eviewList}}
+ <div class="card"> 
+  <div class="row">
+    <div class="card col-11 mx-4 my-4 p-2 ">
+ {{#with title}} 
+ <p>{{userName}}</p>
+ <p>{{caption}}</p>
+ <p>{{date}}</p>
+ {{/with}}
+ </div>
+ 
+ {{#with reviewBody }}
+ <div>
+ {{#with  seller}} 
+ <p>{{title}}</p> 
+ <p>{{value}}</p>
+ {{/with}}
+ </div>
+ <div>
+ {{#with rating}} 
+ <p>{{title}} </p>
+<p>{{value}}</p>
+ {{/with}}
+ </div>
+ <div>
+ {{#each text}}
+ <p>{{text}}</p> 
+ {{/each}}
+ 
+</div>
+<div>
+ {{#with advantages}} 
+ <p>{{title}} </p>
+ <p>{{text}}</p>
+ {{/with}}
+ </div>
+ <div>
+ {{#with disadvantages}}
+ <p> {{title}}</p> 
+<p> {{text}}</p>
+ {{/with}}
+ </div>
+<div>
+ {{#each images}} 
+ {{images}}
+ {{/each}}
+ </div>
+ <div class="card col-11  ms-4 me-2 mb-4 p-2">
+ {{#each coments}}
+ <p>{{userName}}</p> 
+ <p>{{date}} </p>
+<p> {{tex}}</p>
+ {{/each}}
+ </div>
+ {{/with}}
+ </div>
+</div>
+{{/with}}
+
+
