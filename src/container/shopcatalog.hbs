@@ -1,0 +1,505 @@
+{{!-- 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ --}}
+
+<div>
+    <main>
+   <div class="nav">
+       <ul class="nav">
+              <li><a href="https://githu" class="nav-link">Home </a></li>
+             
+              <li><a href="https://www.google.com/" class="nav-link">Contacts </a></li>
+          
+             
+              <li><a href="https://www.youtube.com/"  class="nav-link">Help </a></li>
+           
+         
+       </ul> 
+   </div>
+    <nav aria-label="breadcrumb">
+     <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="https://github.com/">Головна</a></li>
+    <li class="breadcrumb-item"><a href="https://www.google.com/">Комп'ютери та ноутбуки</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ноутбуки</li>
+  </ol>
+     </nav>
+   <br>
+   <section>
+    <div class="p-2">
+      <h2>Ноутбуки</h2>
+    </div>
+    <div class="row">
+    <div class="col-3">
+     <select class="form-select "  multiple size="1"  aria-label="size 1 select example">
+        <option >За ціною</option>
+       <option value="1">За зростанням</option>
+       <option value="2">За спаданням</option>   
+      </select>
+    </div>
+     <div class="col-3">
+         <select class="form-select"  multiple size="1"  aria-label="size 1 select example">
+         <option >За новизною</option>
+         <option value="1">Спочатку нові</option>
+         <option value="2">Спочатку стар</option>   
+          </select>
+      </div>
+        <div class="col-3">
+         <select class="form-select "  multiple size="1"  aria-label="size 1 select example">
+          <option >За рейтингом</option>
+          <option value="1">За зростанням</option>
+          <option value="2">За спаданням</option>   
+         </select>
+       </div>
+       </div>
+   </section>
+<section>
+  <div class="row">
+  <div class="card col-4">  
+    <p>Продавець</p>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+   Machiner
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+  інші
+  </label>
+</div>
+<hr>
+<div>
+  <p>Бренд</p>
+</div>
+<div class="mb-3">
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Пошук">
+</div>
+     <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Acer
+      </label>
+      </div>
+         <div class="form-check">
+         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+         Apple
+         </label>
+          </div>
+            <div class="form-check">
+             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+               Asus
+               </label>
+             </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                     Dell
+                      </label>
+                    </div>  
+  <hr>
+                 <div>
+                  <p>Ціна</p>
+                 </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="8 000">
+                    </div>
+                    <div class="mb-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="30 000">
+                     </div>
+                     <div>
+                      <a href="https://www.youtube.com/" class="btn btn-outline-secondary">OK</a>
+                     </div>
+<hr>
+              <div>
+                <p>Готов к отправке</p>
+              </div>
+                <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                       Готов к отправке
+                    </label>
+                </div>
+  <hr>
+              <div>
+               <p>Процесор</p>
+               </div>
+               <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                     Intel Core i7
+                    </label>
+                </div>
+               <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                    Intel Core i5
+                     </label>
+                 </div>
+                     <div class="form-check">
+                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Intel Core i3
+                            </label>
+                       </div>
+                  <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                       <label class="form-check-label" for="flexCheckDefault">
+                          AMD Ryzen 9
+                            </label>
+                  </div>
+                      <hr>
+            <div>
+             <p>Діагональ екрану</p>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                   13
+                  </label>
+              </div>
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                   <label class="form-check-label" for="flexCheckDefault">
+                 14
+                   </label>
+               </div>
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            15-16
+                          </label>
+                     </div>
+                <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                        17-19
+                          </label>
+                           </div>
+                           <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value=""  id="flexCheckDefault">  
+                     <label class="form-check-label" for="flexCheckDefault">
+                            9-12.5
+                   </label>
+                      </div>
+             
+<hr>
+            <div>
+             <p>Оперативна пам’ять</p>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                   10 - 12ГБ
+                  </label>
+              </div>
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                   <label class="form-check-label" for="flexCheckDefault">
+                  16 - 24ГБ
+                   </label>
+               </div>
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                           32ГБ і більше
+                          </label>
+                     </div>
+                <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                        4ГБ
+                          </label>
+                           </div>
+                             <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      6 - 8ГБ
+                      </label>
+                        </div>
+        <hr>
+            <div>
+             <p>Операційна система</p>
+             </div>
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                   Chrome OS
+                  </label>
+              </div>
+             <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                   <label class="form-check-label" for="flexCheckDefault">
+                  Linux
+                   </label>
+               </div>
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Windows
+                          </label>
+                     </div>
+                <div class="form-check">
+                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                     <label class="form-check-label" for="flexCheckDefault">
+                        Mac OS
+                          </label>
+                           </div>
+                           <div class="form-check">
+                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                               <label class="form-check-label" for="flexCheckDefault">
+                               Без ОС
+                                   </label>
+
+                            </div>
+  </div>
+
+
+<div class="col-4 ">
+  <div >
+    <div class="card mb-2">
+      <div>
+         <img class=" rounded  col-12"src="https://picsum.photos/400/200">
+      </div>
+      <div class="m-2">
+      <span class="badge rounded-pill text-bg-warning ">Hot</span>
+      <span class="badge rounded-pill text-bg-primary ">New</span>
+      </div>
+      <div >
+      <button type="button" class="btn btn-success col-8 m-2">Fast</button></div>
+      <div>
+       <button type="button" class="btn btn-secondary col-8 m-2">Free</button>
+       </div>
+        
+   
+   
+    <div class="p-2">
+      <h5>Ноут</h5>
+      <p> 13 відгуків</p>
+      <p><strong>25 000 ₴</strong></p>
+      <p>Готовий до відправки</p>
+       <div >
+ <a href="https://www.youtube.com/" type="button" class="btn btn-success col-10 m-2">Купити зараз</a></div>
+ <div>
+  <a href="https://www.youtube.com/" type="button" class="btn btn-secondary col-10 m-2">Купити в кредит</a>
+  </div>
+    </div>
+  <div>
+    <ul>
+      <li>Діагональ: 15,6</li>
+      <li>Екран: IPS</li>
+      <li>Процесор: Intel Core i5-1135G7</li>
+      <li>Оперативна пам’ять: 8 ГБ </li>
+    </ul>
+  </div>
+ </div>
+  </div>
+
+
+  
+    <div >
+   <div class="card ">
+     <div>
+        <img class=" rounded  col-12"src="https://picsum.photos/400/200">
+     </div>
+     <div class="m-2">
+     <span class="badge rounded-pill text-bg-warning ">Hot</span>
+     <span class="badge rounded-pill text-bg-primary ">New</span>
+     </div>
+     <div >
+     <button type="button" class="btn btn-success col-8 m-2">Fast</button></div>
+     <div>
+      <button type="button" class="btn btn-secondary col-8 m-2">Free</button>
+      </div>
+       
+  
+  
+   <div class="p-2">
+     <h5>Ноут</h5>
+     <p> 13 відгуків</p>
+     <p><strong>25 000 ₴</strong></p>
+     <p>Готовий до відправки</p>
+      <div >
+<a href="https://www.youtube.com/" type="button" class="btn btn-success col-10 m-2">Купити зараз</a></div>
+<div>
+ <a href="https://www.youtube.com/" type="button" class="btn btn-secondary col-10 m-2">Купити в кредит</a>
+ </div>
+   </div>
+ <div>
+   <ul>
+     <li>Діагональ: 15,6</li>
+     <li>Екран: IPS</li>
+     <li>Процесор: Intel Core i5-1135G7</li>
+     <li>Оперативна пам’ять: 8 ГБ </li>
+   </ul>
+ </div>
+</div>
+    </div>
+  </div>
+
+
+<div class="col-4 ">
+    <div >
+   <div class="card mb-2">
+     <div>
+        <img class=" rounded  col-12"src="https://picsum.photos/400/200">
+     </div>
+     <div class="m-2">
+     <span class="badge rounded-pill text-bg-warning ">Hot</span>
+     <span class="badge rounded-pill text-bg-primary ">New</span>
+     </div>
+     <div >
+     <button type="button" class="btn btn-success col-8 m-2">Fast</button></div>
+     <div>
+      <button type="button" class="btn btn-secondary col-8 m-2">Free</button>
+      </div>
+       
+  
+  
+   <div class="p-2">
+     <h5>Ноут</h5>
+     <p> 13 відгуків</p>
+     <p><strong>25 000 ₴</strong></p>
+     <p>Готовий до відправки</p>
+      <div >
+<a href="https://www.youtube.com/" type="button" class="btn btn-success col-10 m-2">Купити зараз</a></div>
+<div>
+ <a href="https://www.youtube.com/" type="button" class="btn btn-secondary col-10 m-2">Купити в кредит</a>
+ </div>
+   </div>
+ <div>
+   <ul>
+     <li>Діагональ: 15,6</li>
+     <li>Екран: IPS</li>
+     <li>Процесор: Intel Core i5-1135G7</li>
+     <li>Оперативна пам’ять: 8 ГБ </li>
+   </ul>
+ </div>
+   </div>
+</div>
+   
+
+
+
+    <div >
+   <div class="card ">
+     <div>
+        <img class=" rounded  col-12"src="https://picsum.photos/400/200">
+     </div>
+     <div class="m-2">
+     <span class="badge rounded-pill text-bg-warning ">Hot</span>
+     <span class="badge rounded-pill text-bg-primary ">New</span>
+     </div>
+     <div >
+     <button type="button" class="btn btn-success col-8 m-2">Fast</button></div>
+     <div>
+      <button type="button" class="btn btn-secondary col-8 m-2">Free</button>
+      </div>
+       
+  
+  
+   <div class="p-2">
+     <h5>Ноут</h5>
+     <p> 13 відгуків</p>
+     <p><strong>25 000 ₴</strong></p>
+     <p>Готовий до відправки</p>
+      <div >
+<a href="https://www.youtube.com/" type="button" class="btn btn-success col-10 m-2">Купити зараз</a></div>
+<div>
+ <a href="https://www.youtube.com/" type="button" class="btn btn-secondary col-10 m-2">Купити в кредит</a>
+ </div>
+   </div>
+ <div>
+   <ul>
+     <li>Діагональ: 15,6</li>
+     <li>Екран: IPS</li>
+     <li>Процесор: Intel Core i5-1135G7</li>
+     <li>Оперативна пам’ять: 8 ГБ </li>
+   </ul>
+ </div>
+</div>
+</div>
+   </div>
+
+</div>
+
+
+  </div>
+  
+</section>
+
+<section>
+
+      <div class="card text-bg-success">
+        <h2 class="text-center">Our Services</h2>
+       <p class="text-center">We offer a variety of services to meet your needs, including web design, content creation, and social media management.</p>
+      <div class="text-center">
+      <p> <a href="https://www.youtube.com/" class="btn btn-primary"  role="button">Show More</a></p>
+      
+      </div>
+      </div>
+</section>
+<hr>
+
+  <section class="row">
+  
+   <div class="col-2" >
+  <div class="list-group">
+  <a href="https://www.youtube.com/" class="btn btn-link">Home</a>
+  <a href="https://www.youtube.com/feed/subscriptions.com/feed/trending" class="btn btn-link">Trending</a>
+  <a href="https://www.youtube.com/feed/subscriptions" class="btn btn-link">Subscriptions</a>
+  <a href="https://www.youtube.com/feed/library" class="btn btn-link disabled">Library</a>
+  </div>
+  </div>
+
+  <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/feed/history" class="btn btn-link">History</a>
+ <a href="https://www.youtube.com/feed/my_videos" class="btn btn-link">Your Videos</a>
+ <a href="https://www.youtube.com/live" class="btn btn-link">Live</a>
+ <a href="https://www.youtube.com/accoun" class="btn btn-link disabled">Settings</a>
+ </div>
+ </div>
+
+  <div class="col-2" >
+<div class="list-group">
+<a href="https://www.youtube.com/playlist?list=WL" class="btn btn-link">Watch Later</a>
+<a href="https://www.youtube.com/playlist?list=LL" class="btn btn-link">Liked Videos</a>
+<a href="https://www.youtube.com/music" class="btn btn-link">Music</a>
+<a href="https://www.youtube.com/gaming" class="btn btn-link disabled">Gaming</a>
+</div>
+</div>
+
+  <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/channel/UCo_q6aOlvPH7M-j_XGWVgXg" class="btn btn-link">Sports</a>
+ <a href="https://www.youtube.com/news" class="btn btn-link">News</a>
+ <a href="https://www.youtube.com/channel/UC1x8rV_f-2yPpzlN0JWZXIQ" class="btn btn-link">LFashion & Beauty</a>
+ <a href="https://www.youtube.com/learning" class="btn btn-link disabled">Learning</a>
+ </div>
+ </div>
+
+   <div class="col-2" >
+ <div class="list-group">
+ <a href="https://www.youtube.com/feed/history/report_history" class="btn btn-link">Report History</a>
+ <a href="hhttps://support.google.com/youtube/?hl=en" class="btn btn-link">Help</a>
+ <a href="hhttps://support.google.com/youtube/answer/4347644?hl=en" class="btn btn-link">Send Feedback</a>
+ <a href="hhttps://www.youtube.com/about" class="btn btn-link disabled">About</a>
+ </div>
+ </div>
+
+
+
+</section>
+    </main>
+
+</div>
+
+
+{{!-- 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+--}}
