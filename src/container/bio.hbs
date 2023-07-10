@@ -2,6 +2,155 @@
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  --}}
+
+ <div>
+  <main>
+    <div>
+      <h2 class="m-2">Albert Einstein</h2>
+      <dl class="row">
+  <dt class="col-sm-3">birthdate</dt>
+  <dd class="col-sm-9">March 14, 1879</dd>
+
+  <dt class="col-sm-3">birthplace</dt>
+  <dd class="col-sm-9">
+    <p>Ulm, Kingdom of Württemberg, German Empire</p>
+  </dd>
+
+  <dt class="col-sm-3"> deathdate</dt>
+  <dd class="col-sm-9">April 18, 1955</dd>
+
+  <dt class="col-sm-3 text-truncate">deathplace</dt>
+  <dd class="col-sm-9">Princeton, New Jersey, United States</dd>
+  
+   <dt class="col-sm-3">  nationality</dt>
+ <dd class="col-sm-9">Swiss, German, American</dd>
+ <dt class="col-sm-3 text-truncate">occupation</dt>
+ <dd class="col-sm-9">'Theoretical Physicist'</dd>
+</dl>
+    </div>
+    <div>
+      <h3 class="m-2">Known for</h3>
+  <ul class="list-group list-group-flush col-8">
+  <li class="list-group-item">'Theory of Relativity'</li>
+  <li class="list-group-item">'E=mc²</li>
+  <li class="list-group-item">'Brownian Motion'c Effect'</li>
+  <li class="list-group-item">'Brownian Motion'</li>
+</ul>
+    </div>
+    <div>
+      <h5 class="p-3">Education</h5>
+      <p>'Doctor of Philosophy', Physics , University of Zurich,  1905  </p>
+    </div>
+    <div>
+      <h5 class="ms-4">publications</h5>
+
+      <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">title</th>
+      <th scope="col">year</th>
+      <th scope="col"> publisher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>'On the Electrodynamics of Moving Bodies'</td>
+      <td>1905</td>
+      <td>Annalen der Physik</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>'Does the Inertia of a Body Depend Upon Its Energy Content?'</td>
+      <td>1905</td>
+      <td>Annalen der Physik</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    <div>
+      <h5 class="m-2">partners</h5>
+           <table class="table">
+ <thead>
+   <tr>
+     <th scope="col">#</th>
+     <th scope="col">name</th>
+     <th scope="col">relationship</th>
+     <th scope="col"> years</th>
+   </tr>
+ </thead>
+ <tbody>
+   <tr>
+     <th scope="row">1</th>
+     <td>'Mileva Marić</td>
+     <td>First wife</td>
+     <td>1903-1919</td>
+   </tr>
+   <tr>
+     <th scope="row">2</th>
+     <td>Elsa Einstein</td>
+     <td>Second wife, also Einstein's first cousin</td>
+     <td>1919-1936</td>
+   </tr>
+ </tbody>
+</table>
+    </div>
+    <div>
+      <h5 class="m-3">Awards</h5>
+      <p>'Nobel Prize in Physics' , 1921</p>
+      <p>'Awarded for his explanation of the photoelectric effect'</p>
+    </div>
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">influences</h5>
+        <p class="card-text">  'Isaac Newton',
+  'James Clerk Maxwell',
+  'Hermann Minkowski',</p>
+       
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">influences</h5>
+        <p class="card-text">'Niels Bohr',
+'Erwin Schrödinger',
+'Werner Heisenberg',
+'Richard Feynman',</p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+ <div>
+  <h5 class="m-3">Quotes</h5>
+  <ul class="list-group list-group-flush col-10 ">
+  <li class="list-group-item">'Imagination is more important than knowledge.'</li>
+  <li class="list-group-item">'I have no special talent. I am only passionately curious.'</li>
+  <li class="list-group-item">'The important thing is not to stop questioning.'</li>
+  <li class="list-group-item">'The most beautiful thing we can experience is the mysterious. It is the source of all true art and all science.'</li>
+</ul>
+ </div>
+ <div>
+  <h5 class="m-2">Discoveries</h5>
+  <p>'Photoelectric Effect' , 1905</p>
+  <p>Einstein explained the photoelectric effect, where electrons are emitted from a metal surface when it is illuminated by light.</p>
+ </div>
+ <div>
+  <h5 class="ms-4">Contributions</h5>
+  <p>Inventions</p>
+  <p class="p-2"> 'Leonardo designed and invented a wide variety of machines and devices, including a helicopter, a diving suit, and a self-propelled cart. Many of his inventions were centuries ahead of their time.'</p>
+  <p>Late 15th to early 16th century</p>
+  <p>Invention</p>
+ </div>
+
+  </main>
+ </div>
+ {{!--
 <div>
      <main>
 {{#with bio}}
@@ -97,6 +246,7 @@
 
  </main>   
 </div>
+-}}
 
 {{!-- 
     Цей код містить лише те, що буде виводитись в <body>

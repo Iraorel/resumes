@@ -2,6 +2,127 @@
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  --}}
+
+ <div>
+  <main>
+    <div>
+      <h2>Apple MacBook Pro</h2>
+      <p>The ultimate notebook for power users</p>
+      <p> price: 1999.99</p>
+      <p>category: 'Computers & Tablets'</p>
+    </div>
+    <div>
+      <h3> features:</h3>
+    </div>
+    <div class="row">
+      <div class="card col-3 m-1">
+        <h5>processor</h5>
+        <ul class="list-group list-group-flush">
+  <li class="list-group-item">brand: 'Intel</li>
+  <li class="list-group-item">model: 'Core i9</li>
+  <li class="list-group-item">speed: '2.3 GHz</li>
+  <li class="list-group-item">cores: 8</li>
+  <li class="list-group-item">cache: '16 MB</li>
+</ul>
+      </div>
+      <div class="card col-3 m-1">
+        <h5>memory</h5>
+                <ul class="list-group list-group-flush">
+  <li class="list-group-item">type: 'DDR4'</li>
+  <li class="list-group-item">size: '32 GB</li>
+  <li class="list-group-item">speed: '2666 MHz</li>
+                </ul>
+
+      </div>
+      <div class="card col-3 m-1">
+        <h5>storage</h5>
+                       <ul class="list-group list-group-flush">
+ <li class="list-group-item">type: 'SSD'</li>
+ <li class="list-group-item">size: '1 TB</li>
+
+               </ul>
+      </div>
+      <div class="card col-3 m-1">
+        <h5>display</h5>
+                <ul class="list-group list-group-flush">
+  <li class="list-group-item"> size: '16 inches</li>
+  <li class="list-group-item">resolution: '3072x1920</li>
+  <li class="list-group-item">technology: 'Retina'</li>
+  <li class="list-group-item">color_space: 'P3'</li>
+  <li class="list-group-item"> brightness: '500 nits'</li>
+  <li class="list-group-item">  refresh_rate: '60 Hz'</li>
+</ul>
+      </div>
+      <div class="card col-3 m-1">
+        <h5>graphics</h5>
+               <ul class="list-group list-group-flush">
+ <li class="list-group-item"> brand: 'AMD'</li>
+ <li class="list-group-item">model: 'Radeon Pro 5500M'</li>
+ <li class="list-group-item"> memory: '4 GB GDDR6'</li>
+</ul>
+      </div>
+      <div class="card col-3 m-1">
+        <h5>ports</h5>
+                       <ul class="list-group list-group-flush">
+ <li class="list-group-item"> type: 'Thunderbolt 3'</li>
+ <li class="list-group-item"> count: 4,</li>
+ <li class="list-group-item"> features:'Charging',DisplayPort, 'Thunderbolt (up to 40 Gbps)', 'USB 3.1 Gen 2 (up to 10 Gbps)' </li>
+ <li class="list-group-item"> type: 'HDMI'</li>
+ <li class="list-group-item"> count: 1</li>
+</ul>
+      </div>
+      <div class="card col-6 m-1">
+        <h5> battery</h5>
+                       <ul class="list-group list-group-flush">
+ <li class="list-group-item">type: 'Lithium Polymer'</li>
+ <li class="list-group-item">capacity: '100 Wh'</li>
+ <li class="list-group-item">life: 'Up to 11 hours'</li>
+ <li class="list-group-item">weight: '4.3 pounds'</li>
+ <h6>dimensions</h6>
+     <ul class="list-group list-group-flush">
+<li class="list-group-item">height: '0.64 inch'</li>
+<li class="list-group-item">width: '14.09 inches'</li>
+<li class="list-group-item">depth: '9.68 inches'</li>
+ </ul>
+  <li class="list-group-item"> operating_system: 'macOS'</li>
+</ul>
+      </div>
+       </div>
+      <div >
+        <h5> accessories:</h5>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"> name</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Apple Magic Keyboard</td>
+      <td>99.99</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Apple Magic Mouse 2</td>
+      <td>79.99</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>USB-C to USB Adapter</td>
+      <td>19.99</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+   
+  </main>
+ </div>
+ {{!--
 <div>
      <main>
 {{#with mac}}
@@ -99,6 +220,7 @@
 <hr>
  </main>   
 </div>
+--}}
 
 {{!-- 
     Цей код містить лише те, що буде виводитись в <body>

@@ -330,7 +330,7 @@ router.get('/work', function (req, res) {
               department: 'Executive',
               projects: [
                 {
-                  name: 'Project Alpha',
+                  name: 'c',
                   description:
                     'Developing new software platform',
                   status: 'In Progress',
@@ -571,7 +571,7 @@ router.get('/program', function (req, res) {
   })
 })
 
-// ================================================================
+// ===========================================================
 
 router.get('/web', function (req, res) {
   //             ↙ cюди вводимо назву файлу з сontainer
@@ -729,7 +729,7 @@ router.get('/js', function (req, res) {
     ],
     syntax: {
       variables: ['var', 'let', 'const'],
-      functions: ['function'],
+      function: ['function'],
       conditionals: ['if', 'else', 'switch'],
       loops: ['for', 'while', 'do-while'],
       classes: ['class'],
@@ -852,7 +852,7 @@ router.get('/car', function (req, res) {
           rear_cross_traffic_alert: true,
           lane_departure_warning: true,
           adaptive_cruise_control: true,
-          collision_warning: true,
+           collision_warning: true,
         },
       },
     },
@@ -3412,5 +3412,18 @@ router.get('/shopcatalog', function (req, res) {
 })
 
 // ================================================================
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/index8', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('index8', {
+    // 
+    layout: 'index',
+  }
+  )
+})
 // Підключаємо роутер до бек-енду
 module.exports = router

@@ -2,6 +2,151 @@
 Це код container файлу для index сторінки, 
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  --}}
+ <div>
+  <main>
+    <div>
+      <h2>Toyota</h2>
+      <p>Camry</p>
+      <p>2022 , silver</p>
+    </div>
+    <div class="row">
+    <div class="card col-5 m-1">
+      <h5 class="p-2">Interior</h5>
+      <p>seats</p>
+      <ul>
+        <li>material: 'leather'</li>
+        <li> color: 'black'</li>
+        <li>heated: true</li>
+        <li>ventilated: true</li>
+      </ul>
+      <div>
+        <h5 class="p-2">Dashboard</h5>
+        <p> material: 'plastic'</p>
+        <p>color: 'black'</p>
+        <p>display</p>
+        <ul>
+          <li>  type: 'LCD'</li>
+          <li>  size: 10.1</li>
+          <li>  resolution: '1280x720'</li>
+          <li>   touchscreen: true</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="p-2">audio</h5>
+        <ul>
+          <li>system: 'JBL'</li>
+          <li>speakers: 8</li>
+          <li>subwoofer: true</li>
+          <li>bluetooth: true</li>
+          <li>USB: true</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="card col-5 m-1">
+      <h class="p-2">Exterior</h5>
+    <p> wheels</p>
+    <ul>
+      <li>size: 18</li>
+      <li>type: 'alloy'</li>
+      <li>color: 'silver'</li>
+    </ul>
+    <h5 class="p-2">headlights</h5>
+    <ul>
+      <li>type: 'LED'</li>
+      <li>brightness: 'high'</li>
+      <li>automatic: true</li>
+    </ul>
+    <h5 class="p-2">sunroof</h5>
+    <ul>
+      <li>type: 'panoramic'</li>
+      <li>size: 'large'</li>
+      <li>automatic: true</li>
+    </ul>
+    </div>
+    </div>
+    <div>
+      <h5 class="p-2">safety</h5>
+      <ul class="list-group list-group-flush col-4  m-2 p-3">
+  <li class="list-group-item"><strong>airbags</strong></li>
+  <li class="list-group-item">front: 2</li>
+  <li class="list-group-item"> side: 2</li>
+  <li class="list-group-item"> knee: 2</li>
+  <li class="list-group-item"> rear: 2</li>
+</ul>
+<ol class="list-group list-group-numbered col-8 m-2p-2">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"> blind_spot_monitoring:</div>
+    true
+    </div>
+   
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"> rear_cross_traffic_alert</div>
+      true
+    </div>
+  
+  </li>
+   <li class="list-group-item d-flex justify-content-between align-items-start">
+   <div class="ms-2 me-auto">
+     <div class="fw-bold">lane_departure_warning</div>
+   true
+   </div>
+ 
+ </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+   <div class="ms-2 me-auto">
+     <div class="fw-bold"> adaptive_cruise_control</div>
+    true
+   </div>
+ 
+ </li>
+   <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"> collision_warning</div>
+      true
+    </div>
+ 
+  </li>
+ 
+  </li>
+</ol>
+
+    </div>
+
+    <div>
+      <h5 class=" m-2 p-2"> engine</h5>
+      <ul class="list-group list-group-flush col-5 m-2">
+  <li class="list-group-item">type:  gasoline</li>
+  <li class="list-group-item">displacement: 2.5</li>
+  <li class="list-group-item"> horsepower: 206</li>
+  <li class="list-group-item"> torque: 186</li>
+  <li class="list-group-item"> transmission: automatic , 8</li>
+</ul>
+    </div>
+    <div>
+      <h5 class="m-3 p-2">fuel economy</h5>
+      <p>city: 28</p>
+      <p>highway: 39</p>
+      <p> combined: 32</p>
+    </div>
+    <div>
+      <h class="p-2 m-2">price</h5>
+      <p>base: 25900</p>
+      <p>destination: 995</p>
+      <p>navigation: 1200</p>
+      <p>moonroof: 800</p>
+      <p>premium_paint: 595</p>
+    </div>
+    <div>
+      <h5 class="text-center">total: 28990</h5>
+    </div>
+  </main>
+ </div>
+ {{!--
+
 <div>
      <main>
 {{#with car}}
@@ -133,6 +278,7 @@
 
  </main>   
 </div>
+--}}
 
 {{!-- 
     Цей код містить лише те, що буде виводитись в <body>
