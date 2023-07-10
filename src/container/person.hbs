@@ -3,6 +3,140 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
  --}}
 
+
+ <div>
+    <main>
+      <div class="row">
+        <div>
+            <h3 class="m-2">Emma Johnson</h3>
+            <p> Female , 32</p>
+           <div> <p>Address :
+            street 123 Main St,
+            New York,
+             NY,
+             10001,
+            USA</p>
+           </div>
+        <div class="col-6 m-6">
+            <h3 class="p-3"> Education</h3>
+         <p>degree: Bachelor of Science</p> 
+          <p>major:  Computer Science</p>
+         <p>university: Massachusetts Institute of Technology</p>
+         <p>   graduation year: 2012 </p>
+
+            </div>
+        <div class="m-3"> 
+            <h5 class="p-4">Work experience</h5>
+            <p>  company 'Google'</p>
+            <p>Software Engineer</p>
+            <p> start 2012-06-01  end 2016-12-31</p>
+            <p>responsibilities: 'Developed new features for Google Maps',
+          'Worked on improving search algorithms'</p>
+          <p> year founded: 1990 </p>
+          <p> industry: 'Technology'</p>
+        </div>
+        <div class="m-4 ">
+            <h5>Employees</h5>
+           <p>John Smith, CEO ,Executive </p>
+        </div>
+        <div>
+            <h5> Projects</h5>
+            <p> <strong>'c'</strong></p>
+            <p>Developing new software platform<span class="badge bg-secondary">In Progress</span></p>
+
+        </div>
+
+      <div> 
+        <h5 class="p-3">Teams</h5>
+        <p>Awesome Team</p>
+        <ol class="list-group list-group-numbered col-8 m-3">
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">name</div>
+     John Smith
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">title</div>
+    Team Leader
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold"> email</div>
+      john.smith@example.com
+    </div>
+  </li>
+</ol>
+
+      </div>
+      <div>
+        <h5 class="m-4">team_members</h5>
+               <ol class="list-group list-group-numbered col-6 m-2 p-2">
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+   <div class="ms-2 me-auto">
+     <div class="fw-bold">name</div>
+    Alice Johnson
+   </div>
+ </li>
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+   <div class="ms-2 me-auto">
+     <div class="fw-bold">title</div>
+  Software Engineer
+   </div>
+ </li>
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+   <div class="ms-2 me-auto">
+     <div class="fw-bold"> email</div>
+     alice.johnson@example.com
+   </div>
+ </li>
+ <li class="list-group-item d-flex justify-content-between align-items-start">
+  <div class="ms-2 me-auto">
+    <div class="fw-bold"> skills</div>
+   'Java', 'Python', 'SQL'
+  </div>
+</li>
+</ol>
+      </div>
+      <div>
+        <h5 class="m-3">projects</h5>
+        <p class="text-center "><strong>Project A</strong> </p>
+        <p>Lorem ipsum dolor sit amet</p>
+        <p>technologies: 
+  'Java',
+  'Spring Framework'</p>
+      </div>
+
+      <div class="col-6">
+        <h6>team_members</h6>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Bob Lee</td>
+      <td>Software Engineer</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Cindy Chen</td>
+      <td>UI Designer</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      </div>
+    </main>
+ </div>
+{{!---
 <div>
 <main>
     {{#with person}}
@@ -91,7 +225,7 @@
     </div>
     {{/with}}
 </main>
-</div>        
+</div>  -}}      
 {{!-- 
     Цей код містить лише те, що буде виводитись в <body>
     Адже наш layout/default.hbs має вже структуру HTML
